@@ -1,0 +1,11 @@
+state_name,city,avg_mean,avg_median
+Alaska,"Delta Junction",242857.0,300000.0
+"New Jersey","Short Hills",216503.0,300000.0
+Pennsylvania,Narberth,194426.0,224616.0
+Maryland,"Chevy Chase",194157.5,259355.5
+Connecticut,Darien,192882.0,300000.0
+Virginia,"Great Falls",192103.5,215673.5
+"New York",Pelham,190909.0,212250.0
+Virginia,Chantilly,190865.0,300000.0
+Virginia,Mclean,188414.0,246832.3
+"New York",Bronxville,188005.0,244249.5

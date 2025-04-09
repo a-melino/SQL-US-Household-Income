@@ -70,17 +70,72 @@ HAVING COUNT(id) > 1
 
 
 
+# Standardize state names
+SELECT state_name,
+	count(state_name)
+FROM us_household_income
+GROUP BY state_name
+;
+
+# One entry for Georgia has an error, correct it
+UPDATE us_household_income
+SET state_name = 'Georgia'
+WHERE state_name = 'georia'
+;
+# Standardize Alabama
+UPDATE us_household_income
+SET state_name = 'Alabama'
+WHERE state_name = 'alabama'
+;
 
 
 
 
 
+# Check 'place' names for blanks or nulls
+SELECT *
+FROM us_household_income
+WHERE place = ''
+;
+# Fill the one blank value
+UPDATE us_household_income
+SET place = 'Autaugaville'
+WHERE place = ''
+;
 
 
 
 
 
+# Analyze 'type' column
+SELECT type,
+	COUNT(type)
+FROM us_household_income
+GROUP BY type
+;
+# Fix some spelling differences for types ('CDP' vs 'CPD', and 'Borough' vs 'Boroughs')
+UPDATE us_household_income
+SET type = 'Borough'
+WHERE type = 'Boroughs'
+;
+UPDATE us_household_income
+SET type = 'CDP'
+WHERE type = 'CPD'
+;
 
+
+
+
+
+# Explore land area and water area data columns
+# Check to see if any rows contain '0' values for both
+SELECT ALand,
+	AWater
+FROM us_household_income
+WHERE (AWater = 0 OR AWater = '' OR AWater IS NULL)
+AND (ALand = 0 OR ALand = '' OR ALand IS NULL)
+;
+# no entries
 
 
 

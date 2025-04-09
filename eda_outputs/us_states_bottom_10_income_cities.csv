@@ -1,0 +1,11 @@
+state_name,city,avg_mean,avg_median
+Colorado,Center,10946.0,6808.0
+"New Mexico",Estancia,11375.0,300000.0
+"South Dakota",Corsica,13534.0,7282.0
+Kentucky,"Mount Olivet",13882.0,300000.0
+"North Dakota",Fordville,13982.0,8188.0
+"New Mexico",Douglas,14059.0,10494.0
+"New Mexico","Eagle Nest",14114.0,7665.0
+Alabama,Wadley,14741.0,11398.0
+"Puerto Rico","Santa Isabel",15859.0,12248.5
+Arkansas,Arkadelphia,15984.0,9618.0
