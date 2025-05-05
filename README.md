@@ -10,7 +10,7 @@
 
 ### Background and Data Information
 
-This is a sample project intended to showcase SQL data cleaning and analysis skills. This dataset is provided by [AnalystBuilder.com](https://www.analystbuilder.com/) via the US Government, so the data is real and not fabricated. 
+This is a sample project intended to showcase SQL data cleaning and analysis skills. This dataset used real data and is provided by [AnalystBuilder.com](https://www.analystbuilder.com/) via the US Government. 
 
 The data includes two tables which can both be found in the main directory of this repo under the names 'USHouseholdIncome.cs'v' and 'USHouseholdIncome_Statistics.csv'. These are the unaltered original data files. Both datasets contain over 32,000 lines of data relating to all the states and municipalities of the United States. The 'USHouseholdIncome_Statistics.csv' file contains the information relating to mean and median income as well as standard deviation, while the 'USHouseholdIncome.csv' file contains further geographical information. Both tables are linked by a common 'id' column.
 
